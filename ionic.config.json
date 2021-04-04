@@ -1,0 +1,7 @@
+{
+  "name": "toecapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
