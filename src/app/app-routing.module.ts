@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'news',
     loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
 ];
 

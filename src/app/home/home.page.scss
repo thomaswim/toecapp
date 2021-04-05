@@ -1,0 +1,34 @@
+.subtitle{
+    font-size: 1.7em;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+ion-card{
+    height: 150px;
+    background: rgba(240, 240, 243, 0.66);
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    border-radius: 16px;
+    width: 150px;
+    text-align: center;
+
+  }
+
+ion-card-title{
+    
+}
+ion-icon {
+    font-size: 64px;
+
+  }
