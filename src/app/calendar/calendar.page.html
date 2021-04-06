@@ -1,0 +1,118 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content  [fullscreen]="true">
+
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar  >
+      <ion-title   size="large">Calendrier</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+
+  <ion-segment scrollable swipe-gesture="true" color="primary" (ionChange)="segmentChanged($event)" value="heart">
+    <ion-segment-button value="home">
+      <p>Passé</p>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <p>Prochainement</p>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list>
+    <ion-list-header>
+      Mars
+    </ion-list-header>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <h2>13</h2>
+      </ion-avatar>
+      <ion-label>
+        <h2>MOM 2021</h2>
+        <h3>Meeting de marseille</h3>
+        <p>du 13 au 16 mars 2021</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <h2>20</h2>
+      </ion-avatar>
+      <ion-label>
+        <h2>Vacances</h2>
+        <h3>Changement d'horaires</h3>
+        <p>du 20 au 27 mars 2021</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <h2>30</h2>
+      </ion-avatar>
+      <ion-label>
+        <h2>MOM 2021</h2>
+        <h3>Meeting de marseille</h3>
+        <p>du 13 au 16 mars 2021</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Avril
+    </ion-list-header>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./avatar-poe.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Poe</h2>
+        <h3>New Ride</h3>
+        <p>I just upgraded my X-Wing. Next time...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./avatar-ben.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Ben</h2>
+        <h3>Move Along</h3>
+        <p>These aren't the droids you're looking for...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./avatar-leia.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Leia</h2>
+        <h3>You're My Only Hope</h3>
+        <p>I've placed information vital to the survival...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./avatar-yoda.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Yoda</h2>
+        <h3>Size matters not</h3>
+        <p>Do or do not. There is no try...</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

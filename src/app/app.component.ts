@@ -8,9 +8,9 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
     { title: 'News', url: '/news', icon: 'newspaper' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
+    { title: 'Calendrier', url: '/calendar', icon: 'calendar' },
+    { title: 'Infos', url: '/infos', icon: 'information' },
+    { title: 'Live', url: '/live', icon: 'time' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

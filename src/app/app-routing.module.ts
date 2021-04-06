@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
+  {
+    path: 'infos',
+    loadChildren: () => import('./infos/infos.module').then( m => m.InfosPageModule)
+  },
+  {
+    path: 'live',
+    loadChildren: () => import('./live/live.module').then( m => m.LivePageModule)
   }
 ];
 
