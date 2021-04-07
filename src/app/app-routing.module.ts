@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'live',
     loadChildren: () => import('./live/live.module').then( m => m.LivePageModule)
+  },
+  {
+    path: 'alertes',
+    loadChildren: () => import('./alertes/alertes.module').then( m => m.AlertesPageModule)
   }
 ];
 

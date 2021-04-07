@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-news',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public afDB: AngularFireDatabase
+  ) { }
 
+  add() {
+    this.afDB.list('User/').push({
+      pseudo: 'drissas'
+    });
+  }
   ngOnInit() {
   }
 

@@ -16,6 +16,15 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-list id="inbox-list" *ngFor="let p of logos ; let i = index">
+
+      <ion-item routerDirection="root" [routerLink]="[p.url]"detail="false" routerLinkActive="selected">
+        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+        <ion-label>{{ p.titre }}</ion-label>
+      </ion-item>
+
+  </ion-list>
+
 
 
 </ion-content>
