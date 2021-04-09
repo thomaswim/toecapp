@@ -1,0 +1,39 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content  [fullscreen]="true">
+
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar  >
+      <ion-title   size="large">Roster</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-list>
+  
+
+    <ion-item *ngFor="let p of membre ; let i = index" (click)="presentModal(p)">
+      <ion-avatar slot="start">
+        <img src="./avatar-finn.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{p.firstName}} {{p.lastName}}</h2>
+        <h3>{{p.spe}}</h3>
+        <p>{{p.age}} ans</p>
+      </ion-label>
+    </ion-item>
+
+
+  </ion-list>
+
+
+
+</ion-content>

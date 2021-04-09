@@ -2,11 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 
 
-interface une_alerte {
-  title : string;
-  doc : string
-};
-
 @Component({
   selector: 'app-alertes',
   templateUrl: './alertes.page.html',
@@ -24,7 +19,7 @@ export class AlertesPage implements OnInit {
   constructor(
     public afDB: AngularFireDatabase
   ) { }
-a = 1;
+
 getAlerteDatabase(){
   this.afDB.list('Alertes/').snapshotChanges(['child_added']).subscribe(alertes =>{
     alertes.forEach(alerte =>{

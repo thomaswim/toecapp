@@ -13,6 +13,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { SortPipe } from './sort.pipe';
+
 
 
 export const firebaseConfig = {
@@ -26,7 +28,7 @@ export const firebaseConfig = {
 };
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SortPipe],
   entryComponents: [],
   imports: [BrowserModule,
      IonicModule.forRoot(),
@@ -34,7 +36,8 @@ export const firebaseConfig = {
       AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    AngularFireStorageModule],
+    AngularFireStorageModule,
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
