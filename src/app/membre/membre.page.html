@@ -1,14 +1,58 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
         <ion-button (click)="dismiss()">
           <ion-icon name="arrow-back"></ion-icon>
         </ion-button>
     </ion-buttons>
-    <ion-title>{{membre.firstName}}</ion-title>
+    <ion-title>{{membre.firstName}} {{membre.lastName}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<button (click)="dismiss()">dis</button>
+  
+  <div class="header">
+    <h2>{{membre.firstName}} {{membre.lastName}}</h2>
+  </div>
+    
+  <div class="flex">
+    <div class="border-blue">
+        <div class="img-box">
+          <img src="./assets/img/boursac.JPG" />
+        </div>
+    </div>
+    </div>
+    <div class="social">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+
+    </div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>spécialités</ion-card-subtitle>
+        <ion-card-title>{{membre.spe_list}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{membre.birthday}}</ion-card-subtitle>
+        <ion-card-title>{{membre.age}} ans </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Palmarès</ion-card-subtitle>
+        <ion-card-title>{{membre.palmares}} </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Commentaire</ion-card-subtitle>
+        <ion-card-content>{{membre.comment}} J'aime ca ci bla bla bla dsvgfqskyudfbsd sqhfhsd fhsdhfçpuvspshfdsvcgphschrgpshgmxh pghvspvpfgh sdfgbvdhgvfphdmbnvm </ion-card-content>
+      </ion-card-header>
+    </ion-card>
+
+
+
 </ion-content>

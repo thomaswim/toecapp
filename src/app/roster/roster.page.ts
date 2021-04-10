@@ -63,11 +63,13 @@ async presentModal(membre) {
           var lastName = alerte.payload.exportVal().lastName;
           var firstName = alerte.payload.exportVal().firstName;
           var spe = alerte.payload.exportVal().spe;
+          var palmares = alerte.payload.exportVal().palmares;
+          var spe_list = alerte.payload.exportVal().spe_list;
           var comment = alerte.payload.exportVal().comment;
           var birthday = alerte.payload.exportVal().birthday;
           var splittedDate = birthday.split('/'); // On coupe à chaque fois qu'une virgule est rencontrée
           var age = getAge(new Date(splittedDate[2],splittedDate[1],splittedDate[0])) //recuperation de l'age a partir de la date de naissance
-          let object = {lastName : lastName, firstName : firstName, comment :comment, spe:spe,birthday:birthday,splittedDate:splittedDate,age:age};
+          let object = {lastName : lastName, firstName : firstName, comment :comment, palmares:palmares, spe:spe,spe_list:spe_list,birthday:birthday,splittedDate:splittedDate,age:age};
           this.membre.push(object)
 
           //tri du tableau
