@@ -42,6 +42,22 @@ const routes: Routes = [
   {
     path: 'membre',
     loadChildren: () => import('./membre/membre.module').then( m => m.MembrePageModule)
+  },
+  {
+    path: 'news-page',
+    loadChildren: () => import('./news-page/news-page.module').then( m => m.NewsPagePageModule)
+  },
+  {
+    path: 'horaires',
+    loadChildren: () => import('./horaires/horaires.module').then( m => m.HorairesPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'partenaires',
+    loadChildren: () => import('./partenaires/partenaires.module').then( m => m.PartenairesPageModule)
   }
 ];
 

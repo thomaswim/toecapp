@@ -12,25 +12,18 @@
 
   <ion-header collapse="condense" class="ion-no-border">
     <ion-toolbar  >
-      <ion-title   size="large">News </ion-title>
+      <ion-title   size="large">Alertes</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div id="content"></div>
-  
-    
-  <ion-card *ngFor="let p of Data ; let i = index"  (click)="presentModal(p)">
-    <a onclick="console.log('aa')"></a>
-    <img src={{p.thumbnail}}>
+<ion-content>
+  <ion-card  *ngFor="let p of alertes; let i = index">
+    <img *ngIf="p.img != undefined" src="./../../assets/img/test.jpg" />
     <ion-card-header>
-      <ion-card-subtitle>{{p.pubDate}}</ion-card-subtitle>
+      <ion-card-subtitle>{{p.date}}</ion-card-subtitle>
       <ion-card-title>{{p.title}}</ion-card-title>
     </ion-card-header>
-    <ion-card-content  [innerHTML]="p.description">
-       
+    <ion-card-content>
+      {{p.doc}}
     </ion-card-content>
   </ion-card>
-
-
-  <div id="content"></div>
-
 </ion-content>

@@ -9,10 +9,10 @@ export class InfosPage implements OnInit {
 
   public logos = [
     { titre :"Alertes", icon: 'home', url : '/alertes' },
-    {  titre :"Horaires",  icon: 'newspaper' },
+    {  titre :"Horaires",  icon: 'newspaper' ,url:'/horaires'},
     {  titre :"Adresses",  icon: 'calendar' },
-    {  titre :"Partenaires", icon: 'information' },
-    {   titre :"Contact", icon: 'time' },
+    {  titre :"Partenaires", icon: 'information', url : '/partenaires'},
+    {   titre :"Contact", icon: 'time', url : '/contact'},
   ];
   constructor() { }
 

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content  [fullscreen]="true">
+
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title   size="large">Contact</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+  <ion-card  *ngFor="let p of partenaires; let i = index">
+    <img *ngIf="p.img != undefined" src="./../../assets/img/test.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>{{p.sousTitre}}</ion-card-subtitle>
+      <ion-card-title>{{p.titre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{p.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -26,6 +26,7 @@ console.log(membre)
     });
   }
 
+ 
   ngOnInit() {
     console.log(this.membre) 
   }
